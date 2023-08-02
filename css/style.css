@@ -1,0 +1,75 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.general_wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 100vw;
+  height: calc(100% - 50px);
+  background: rgba(150, 150, 150, 0.272);
+}
+
+.row {
+  display: flex;
+  width: 100%;
+}
+
+/* .col:hover {
+  background: rgba(252, 194, 194, 0.635);
+} */
+
+.col {
+  outline: 1px auto #6666664a;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  user-select: none;
+}
+
+.window_widget {
+  /* resize: both; */
+  /* overflow: auto; */
+  position: absolute;
+  border: 1px solid black;
+  background: rgba(67, 172, 242, 0.153);
+  transition: transform 0.25s;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+}
+
+.window_widget__moved_block {
+  height: 30px;
+  width: 100%;
+  background: red;
+}
+
+.window_widget__body_block {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: calc(100% - 30px);
+}
+
+.window_widget__resize_block {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background: red;
+  right: 0;
+  bottom: 0;
+  cursor: nwse-resize;
+}
+#buttonAdd {
+  padding: 15px;
+}

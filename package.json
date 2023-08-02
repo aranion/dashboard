@@ -4,12 +4,11 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "http-server ./ -p 80"
   },
   "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/aranion/dashboard/issues"
-  },
-  "homepage": "https://github.com/aranion/dashboard#readme"
+  "devDependencies": {
+    "http-server": "14.1.1"
+  }
 }
